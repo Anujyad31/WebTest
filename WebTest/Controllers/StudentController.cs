@@ -23,6 +23,8 @@ namespace WebTest.Controllers
             tbl_student obj = new tbl_student();
             obj.Name = model.Name;
             obj.Email = model.Email;
+            obj.Address = model.Address;
+
 
             dbObj.tbl_student.Add(obj);
             dbObj.SaveChanges();
